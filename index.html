@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="center">
+        <h1>Login</h1>
+        <form action="auth.php" method="post">
+            <div class="text_field">
+                <input type="text" id="username" name="username" required>
+                <span></span>
+                <label for="username">username</label>
+                
+            </div>
+
+            <div class="text_field">
+                <input type="password" id="password" name="password" required>
+                <span></span>
+                <label for="password">password</label>
+            </div>
+                
+    
+            <div class="pass" id="myLink">Forgot Password?</div>
+            <div  id="signup">
+             <a href="signup.html">don't have an account ?</a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script>
+        // Get the hyperlink element by its ID
+        var myLink = document.getElementById('myLink');
+
+        // Add a click event listener to the hyperlink
+        myLink.addEventListener('click', function (event) {
+            // Prevent the default behavior of the hyperlink (e.g., navigating to a new page)
+            event.preventDefault();
+
+            // Show an alert when the hyperlink is clicked
+            alert('It is your Problem');
+        });
+    </script>
+    
+
+
+</body>
+</html>
